@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>insert page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <center><br><br>
+        <h1>Employee Details</h1>
+        <body>
+            <form action="EmployeeServlet?action=insert" method="post">
+                Employee name <input type="text" name="emp_name"required="true"/><br><br>
+                Employee Address   <input type="text" name="emp_add"required="true"/><br><br>
+                Employee Salary   <input type="text" name="emp_sal"required="true"/><br><br>
+                Employee Email   <input type="email" name="emp_email"required="true"/><br><br>
+                <!--
+                below code is given for radio button gender 
+                -->
+                <b>Gender:</b> <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label> <br><br>
+                <!--Employee Salary   <input type="text" name="emp_dept" value="" /><br><br>-->
+                <input type="submit" value="insert">  <br>  <br>
+            </form>
+            <!--it should be outside of form action tag--> 
+            <!--         <input type="submit" value="insert">-->
+            <a href="EmployeeServlet?action=display"><button>Display</button></a>
+        </body>
+</html>
